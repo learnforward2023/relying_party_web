@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class SessionsController < ApplicationController
-  def index; end
+  def new; end
 
   def destroy; end
 end

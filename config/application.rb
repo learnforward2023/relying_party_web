@@ -25,5 +25,7 @@ module RelyingPartyWeb
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.session_store :active_record_store, key: '_relying_party_session'
   end
 end
