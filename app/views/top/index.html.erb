@@ -1,0 +1,7 @@
+<h1>Welcome to the Study Together Client</h1>
+<% if user_signed_in? %>
+  <p>You are logged in with <strong><%= current_user.email %></strong>. <%= button_to 'Logout', logout_path, method: :delete, form: 
+  { data: { turbo: true } } %>
+<% else %>
+  <p><a href="/auth/stid">Login with Study Together ID</a></p>
+<% end %>
