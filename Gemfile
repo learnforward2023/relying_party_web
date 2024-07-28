@@ -6,6 +6,8 @@ ruby '3.3.3'
 
 gem 'rails', '~> 7.1.3', '>= 7.1.3.4'
 
+gem 'activerecord-session_store'
+gem 'jwt'
 gem 'mysql2', '~> 0.5'
 gem 'puma', '>= 5.0'
 gem 'sprockets-rails'
