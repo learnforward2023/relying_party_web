@@ -3,7 +3,7 @@
 class User < ApplicationRecord
   has_many :user_sessions, dependent: :destroy
 
-  validates :uid, presence: true, uniqueness: true
+  validates :uuid, presence: true, uniqueness: true # rubocop:disable Rails/UniqueValidationWithoutIndex
   validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP } # rubocop:disable Rails/UniqueValidationWithoutIndex
 
   def invalidate_session!

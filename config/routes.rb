@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   delete '/logout', to: 'sessions#destroy'
   get '/auth/stid', to: 'sessions#new'
+  get '/auth/callback', to: 'omniauth_callbacks#callback'
+  get '/auth/failure', to: 'omniauth_callbacks#failure'
 end

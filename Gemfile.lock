@@ -119,6 +119,8 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.7.2)
+    jwt (2.8.2)
+      base64
     language_server-protocol (3.17.0.3)
     logger (1.6.0)
     loofah (2.22.0)
@@ -295,6 +297,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-session_store
   capybara
+  jwt
   mysql2 (~> 0.5)
   pry-byebug
   pry-doc
